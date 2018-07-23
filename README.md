@@ -20,14 +20,16 @@ This approach is used together with another project: **Sysmon Visualization** wh
 |                                                              | OneWaySFTP | Syslog  | Windows Event Forward                    |
 | ------------------------------------------------------------ | ---------- | ------- | :--------------------------------------- |
 | Access Control                                               | Yes        | NO      | Using 'enterprise' PKI can be complex    |
-| Complexity/Effort                                            | Low        | Low     | High & only for Windows                  |
+| Complexity/Effort                                            | Low        | Low     | High & *only for Windows*                |
 | [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) Detection | Yes        | NO      | Yes. Hey it's PKI!                       |
 | Intrusion Detection                                          | Yes        | NO      | NO                                       |
 | Encrypted Transport                                          | Yes        | NO      | Depends (some use plain HTTP)            |
 | "Cloud friendly"                                             | Yes        | NO      | Depends. Usually within Intranet.        |
 | Cost                                                         | Free       | Depends | Skill-set for PKI, AD... etc is not free |
 
-# Installation
+**If you are using Syslog, please at least enforce network access control, otherwise anyone can spam it with rubbish.**
+
+# Installations
 
 [oneWaySFTPsetup.sh](https://github.com/jymcheong/OneWaySFTP/blob/master/oneWaySFTPsetup.sh) was tested with Ubuntu 17.10 but can be adapted to your preferred Linux. A quick outline of what it is doing:
 

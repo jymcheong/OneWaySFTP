@@ -26,7 +26,7 @@ sudo systemctl restart sshd
 # Due to chroot, a socket folder needs to be created for 
 mkdir -m2755 /var/sftp/dev
 echo 'input(type="imuxsock" Socket="/var/sftp/dev/log" CreatePath="on")' >> /etc/rsyslog.d/sftp.conf
-echo "if $programname == 'internal-sftp' then /var/log/sftp.log" >> /etc/rsyslog.d/sftp.conf
+echo "if \$programname == 'internal-sftp' then /var/log/sftp.log" >> /etc/rsyslog.d/sftp.conf
 echo '& stop' >> /etc/rsyslog.d/sftp.conf
 systemctl reload-or-restart rsyslog
 
