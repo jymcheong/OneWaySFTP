@@ -24,7 +24,7 @@ This approach is used together with another project: **Sysmon Visualization** wh
 | [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) Detection | Yes        | NO      | Yes. Hey it's PKI!                       |
 | Intrusion Detection                                          | Yes        | NO      | NO                                       |
 | Encrypted Transport                                          | Yes        | NO      | Depends (some use plain HTTP)            |
-| "Cloud friendly"                                             | Yes        | NO      | Depends. Usually within Intranet.        |
+| "Cloud/Data-Lake" friendly                                   | Yes        | NO      | Depends. Usually within Intranet.        |
 | Cost                                                         | Free       | Depends | Skill-set for PKI, AD... etc is not free |
 
 **If you are using Syslog, please at least enforce network access control, otherwise anyone can spam it with rubbish.**
