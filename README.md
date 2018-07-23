@@ -17,15 +17,15 @@ This approach is used together with another project of mine: **Sysmon Visualizat
 
 # Comparison
 
-|                                                              | OneWaySFTP | Syslog  | Windows Event Forward                        |
-| ------------------------------------------------------------ | ---------- | ------- | :------------------------------------------- |
-| Access Control                                               | Yes        | NO      | Using 'enterprise' PKI, which can be complex |
-| Complexity/Effort                                            | Low        | Low     | High & only for Windows                      |
-| [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) Detection | Yes        | NO      | Yes                                          |
-| Intrusion Detection                                          | Yes        | NO      | NO                                           |
-| Encrypted Transport                                          | Yes        | NO      | Depends (some use plain HTTP)                |
-| "Cloud friendly"                                             | Yes        | NO      | Depends                                      |
-| Cost                                                         | Free       | Depends | Related to configuration of PKI, AD... etc   |
+|                                                              | OneWaySFTP | Syslog  | Windows Event Forward                    |
+| ------------------------------------------------------------ | ---------- | ------- | :--------------------------------------- |
+| Access Control                                               | Yes        | NO      | Using 'enterprise' PKI can be complex    |
+| Complexity/Effort                                            | Low        | Low     | High & only for Windows                  |
+| [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) Detection | Yes        | NO      | Yes                                      |
+| Intrusion Detection                                          | Yes        | NO      | NO                                       |
+| Encrypted Transport                                          | Yes        | NO      | Depends (some use plain HTTP)            |
+| "Cloud friendly"                                             | Yes        | NO      | Depends                                  |
+| Cost                                                         | Free       | Depends | Skill-set for PKI, AD... etc is not free |
 
 # Installation
 
