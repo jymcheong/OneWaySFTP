@@ -8,7 +8,7 @@ The idea is borrowed from data-diode. We upload (write-only) rotated log files t
 1. **Deny** SSH/SCP access, only SFTP. *No special software required, just openssh-server.*
 2. **Deny** read or directory listing to the */var/sftp/uploads with BindFS*; **write-only access**
 3. **Detect** SSH/SCP failed attempts by logging a chroot environment. *Any of such attempts are reliable indicator of Privilege-Escalation because the credential/private-key can only be read by a non-interactive account with the SFTP script.* You can think of it as a trap.
-4. **Deter** any over-writing attempt by using unix integer timestamp in the rotated file names. 
+4. **Deter** any over-writing attempt by using unix integer timestamp in the rotated file names at the sender-side. 
 5. **Deter** from accessing SSH/SCP now that I revealed that it is a trap ;)
 
 ![funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif](img/funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif.jpeg)
