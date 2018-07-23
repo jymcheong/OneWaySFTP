@@ -29,9 +29,9 @@ This approach is used together with another project of mine: **Sysmon Visualizat
 
 # Installation
 
-oneWaySFTPsetup.sh was crafted for Ubuntu but can be adapted to your preferred Linux. A quick outline of what it is doing:
+[oneWaySFTPsetup.sh](https://github.com/jymcheong/OneWaySFTP/blob/master/oneWaySFTPsetup.sh) was tested with Ubuntu 17.10 but can be adapted to your preferred Linux. A quick outline of what it is doing:
 
-1. First block of commands are related to creating **uploader** account & directory permission
-2. Second block is related to setting up "[chrooted](https://en.wikipedia.org/wiki/Chroot)" SFTP only access by **reconfiguring /etc/ssh/sshd_config** 
-3. Third block enables Rsyslog logging within a chrooted directory.
-4. Final block downloads stable bindfs version that includes **--delete-deny**, the one in Ubuntu repo may not have that option.
+1. [First block](https://github.com/jymcheong/OneWaySFTP/blob/58142c5ab4c933829af0bc86fda954364d98b4eb/oneWaySFTPsetup.sh#L3) of commands are related to creating **uploader** account & directory permission
+2. [Second block](https://github.com/jymcheong/OneWaySFTP/blob/58142c5ab4c933829af0bc86fda954364d98b4eb/oneWaySFTPsetup.sh#L10) is related to setting up "[chrooted](https://en.wikipedia.org/wiki/Chroot)" SFTP only access by **reconfiguring /etc/ssh/sshd_config** 
+3. [Third block](https://github.com/jymcheong/OneWaySFTP/blob/58142c5ab4c933829af0bc86fda954364d98b4eb/oneWaySFTPsetup.sh#L28) enables Rsyslog logging within a chrooted directory.
+4. [Final block](https://github.com/jymcheong/OneWaySFTP/blob/58142c5ab4c933829af0bc86fda954364d98b4eb/oneWaySFTPsetup.sh#L36) downloads stable Bindfs version that includes **--delete-deny**, the one in Ubuntu repo may not have that option. The magic of write-only is implemented with [BindFS](https://bindfs.org).
