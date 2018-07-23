@@ -1,7 +1,7 @@
 # What is OneWaySFTP?
 One-way Transport of System Event Logs via SFTP. 
 
-![diode](/Users/jymcheong/Desktop/OneWaySFTP/img/diode.png)
+![diode](img/diode.png)
 
 The idea is borrowed from data-diode. We upload (write-only) rotated log files to a specially configured SFTP server to:
 
@@ -11,7 +11,7 @@ The idea is borrowed from data-diode. We upload (write-only) rotated log files t
 4. **Deter** any over-writing attempt by using unix integer timestamp in the rotated file names. 
 5. **Deter** from accessing SSH/SCP now that I revealed that it is a trap ;)
 
-![funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif](/Users/jymcheong/Desktop/OneWaySFTP/img/funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif.jpeg)
+![funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif](img/funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif.jpeg)
 
 This approach is used together with another project of mine: **Sysmon Visualization** which I will release after tidying it up.
 
