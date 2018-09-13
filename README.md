@@ -13,7 +13,7 @@ The idea is borrowed from data-diode. We upload (write-only) rotated log files t
 
 ![funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif](img/funny-sign-it-s-a-trap-image-of-admiral-ackbar-1.gif.jpeg)
 
-This approach is used together with another project: **Sysmon Visualization** which I will release after tidying it up.
+This approach is used together with another project: **[Sysmon Visualization](https://github.com/jymcheong/SysmonViz)**.
 
 # Comparison
 
